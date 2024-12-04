@@ -68,7 +68,7 @@ func NewVirtualMachineInstance(namespace string, opts ...VMIOption) *kubevirtv1.
 					Name: "containerdisk",
 					VolumeSource: kubevirtv1.VolumeSource{
 						ContainerDisk: &kubevirtv1.ContainerDiskSource{
-							Image: "quay.io/kubevirtci/alpine-container-disk-demo:devel_alt",
+							Image: "quay.io/kubevirt/alpine-container-disk-demo:v1.4.0",
 						},
 					},
 				},
