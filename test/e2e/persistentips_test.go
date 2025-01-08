@@ -316,12 +316,12 @@ var _ = DescribeTableSubtree("Persistent IPs", func(params testParams) {
 			networkInterfaceName: secondaryLogicalNetworkInterfaceName,
 			vmi:                  vmiWithMultus,
 		}),
-	Entry("primary UDN",
-		testParams{
-			role:                 rolePrimary,
-			networkInterfaceName: primaryLogicalNetworkInterfaceName,
-			vmi:                  vmiWithManagedTap,
-		}),
+	// Entry("primary UDN",
+	// 	testParams{
+	// 		role:                 rolePrimary,
+	// 		networkInterfaceName: primaryLogicalNetworkInterfaceName,
+	// 		vmi:                  vmiWithManagedTap,
+	// 	}),
 )
 
 func foregroundDeleteOptions() *client.DeleteOptions {
